@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Gwadabat</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/all.css">
+        <meta name="author" content="Dylan VENT"/>
+        <meta name="description" content="btp-gwadabtp-entreprise btp-btp guadeloupe"/>
+    </head>
+    <body>
+        <header>
+            <!-- <div id="logo">
+                <img src="img/logo.png" alt="Logo de l'entreprise">
+            </div> -->
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="#commandes">Commandes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="presentation">
+            <div class="entete-1">
+                <div class="flex">
+                    <h1>Gwadabat, l'entreprise numéro 1 du BTP !</h1>
+                </div>
+            </div>
+            <div class="entete-2">
+                <h2>Nous sommes à votre service !</h2>
+                <h3>Une équipe à votre écoute</h3>
+                <p>
+                    Professionnel ou bricoleur amateur, vous pouvez nous contacter afin d’obtenir toutes les informations nécessaires pour réaliser vos travaux. Nous sommes à votre écoute afin d’accompagner vos projets et pour vous conseiller dans le choix de vos produits.
+                    Contactez-nous par mail ou par téléphone afin d’obtenir les conseils de professionnels. 
+                    Notre équipe vous assiste tout au long de votre projet afin de vous aider dans le choix des matériaux de construction.
+                </p>    
+            </div>
+                
+            <section id="pictures">
+                <figure>
+                    <img src="img/brick.jpg" alt="Brique"/>
+                    <figcaption>Briques en ciment</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/graviers.jpg" alt="Graviers"/>
+                    <figcaption>Graviers</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/parpaing.jpg" alt="Parpaing"/>
+                    <figcaption>Parpaing</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/treillis.jpg" alt="Treillis soudé béton"/>
+                    <figcaption>Treillis soudé béton</figcaption>
+                </figure>
+              <!--   <figure>
+                    <img src="img/sable.jpg" alt="Sable"/>
+                    <figcaption>Sable</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/camion-toupie.jpg" alt="Camion toupie"/>
+                    <figcaption>Camion de ciment</figcaption>
+                </figure> -->
+            </section>
+        </section>
+
+        <section id="commandes">
+            <form action="traitement.php" method="post">
+             <fieldset>
+                 <legend>Commandes</legend>
+                 <label for="nom">Materiaux</label><br>
+                 <input type="text" name="nom" id="nom"><br>
+                 <label for="nom">Type de produit</label><br>
+                 <select name="typeproduit" id="typeproduit">
+                     <option value="">Briques en ciment</option>
+                     <option value="">Graviers</option>
+                     <option value="">Parpaing</option>
+                     <option value="">Treillis soudé béton</option>
+                     <option value="">Sable</option>
+                 </select><br>
+                 <label for="quantite">Quantité</label><br>
+                 <select name="quantite" id="quantite">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
+                     <option value="7">7</option>
+                     <option value="8">8</option>
+                     <option value="9">9</option>
+                     <option value="10">10</option>
+                 </select><br>
+                 <label for="uniter">Unité</label><br>
+                 <select name="uniter" id="uniter">
+                     <option value="kg">kg</option>
+                     <option value="l">l</option>
+                     <option value="m3">m3</option>
+                 </select><br>
+                 <label for="datelivraison">Date de livraison</label><br>
+                 <input type="date" name="datelivraison" id="datelivraison"><br>
+                 <label for="adresselivraison">Adresse Livraison</label><br>
+                 <input type="text" name="adresselivraison" id="adresselivraison"><br>
+                 <label for="motifcommande" class="motifcommande">Motif détaillé de la commande</label><br>
+                 <textarea name="motifcommande" id="motifcommande" cols="30" rows="10"></textarea><br>
+                 <input type="submit" value="Valider" class="button">
+             </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p class="fas fa-user-friends"></p>
+            <div id="contact" class="offset">
+                <div class="foot text-center" id="foot-1">
+                    <div class="col-md-5 text-center">
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connectez-vous</button>
+                        <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <form class="modal-content" action="#" method="post">
+                                <div class="col-12" text-center>
+                                    <h2 class="heading">Connectez-vous</h2><br/>
+                                    <div class="heading-underline"></div>
+                                </div>
+                                <p>Rentrez votre identifiant et votre mot de passe :</p>
+                                <hr>
+                                <div class="row text-right">
+                                    <div class="col-md-4">
+                                        <label for="user"><b>Identifiant</b></label>
+                                        <input type="text" placeholder="Entrez votre identifiant" name="user" required>
+                                        <br/>
+                                        
+                                        <label for="password"><b>Mot de passe</b></label>
+                                        <input type="text" placeholder="Entrez votre mot de passe" name="password" required>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                    </div> <!-- End row form -->
+                                    <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+                                    <button type="submit" class="signupbtn">Valider</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Copyright © Didi Gwadabat 2019</p>
+        </footer>
+    </body>
+</html>

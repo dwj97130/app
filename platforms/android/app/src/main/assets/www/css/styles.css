@@ -1,0 +1,329 @@
+/* Général */
+
+body {
+	font-size: 16px;
+	background-color: #cccccc;
+  margin: 0;
+}
+
+/* Header */
+header { 
+  position: fixed;
+  top: 0;
+  background-color: #FF0000;
+  width:100%;
+}
+
+
+/* Menu de navigation */ 
+nav {
+	overflow: hidden;
+	background-color: #ff0000;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+
+
+/* listes */
+li {
+	list-style-type: none;
+	padding-right: 18px;
+}
+
+ /* liens */
+a {
+	font-size: 17px;
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover {
+  background-color: #aaaaaa;
+	padding: 8px;
+	color: #ff0000;
+}
+
+/* Encadrer menu de navigation*/
+.active {
+  	background-color: #aaaaaa;
+	padding: 8px;
+}
+
+ /* Entête-1 */ 
+
+ .flex {
+ 	display: flex;
+ 	margin-right: 36px;
+ }
+
+ .logo {
+ 	margin-top: -70px;
+ }
+
+.entete-1 {
+	display: flex; /* Pour l'aligner avec le logo */
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+	text-align: center;
+}
+
+ /* Entete-2 */ 
+.entete-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.entete-2 h3 + p {
+	text-align: center;
+	width: 53%;
+}
+
+/* Logo */ 
+
+.logo {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+/* Section Images */
+
+#pictures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+figure img {
+	width: 293px;
+	height: 276px;
+}
+
+/* Description Images centrée */
+figure figcaption {
+	text-align: center;
+}
+
+/* formulaire de commade */ 
+
+#commandes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-top: 80px;
+}
+
+legend,label,input{
+  color: #ff0000;
+}
+
+input {
+  margin-top: 5px;
+  width: 180px;
+}
+
+textarea {
+  margin-top: 5px;
+}
+
+.button {
+  width: 110px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  height: 165px;
+  background-color: #7f7f7f;
+  width: 100%;
+}
+
+footer p {
+  color: #fff; 
+}
+
+/* formulaire d'inscription */
+
+/* Champs saisie largeur */
+input[name=user], input[name=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Ajout couleur background quand zone de saisie cliquée */
+input[name=user]:focus, input[name=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Définit un style pour les boutons du footer */
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles pour le bouton Annuler */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+  background-color: limegreen;
+}
+
+/* Float pour le boutons Annuler et Valider et ajoute une largeur égale */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Ajoute du padding au container */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (le background) */
+.modal {
+  display: none; /* Caché par défaut */
+  position: fixed; /* Reste en place */
+  z-index: 1; /* Reste au dessus */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Autorise le scroll (défilement) si besoin */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Contenu Modal /Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* Style de l'axe horizontal */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* Le bouton Fermer (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Dépassement floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles pour boutons Valider et Annuler sur les petits écrans */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/* Fin bouton Connexion */
+
+#foot-1 {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rights {
+  text-align: center;
+  color: white;
+}
+
+/* Style logo du footer */
+.imgfoot {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: -40px;
+}
+
+/* icone font-awesome */
+
+/*.fas {
+  font-size: 26px;
+  color: white;
+}*/
+
+/* Responsive */
+
+@media all and (min-width: 600px) and (max-width: 980px) {
+  #commandes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+   }
+
+  figure img {
+    width: 250px;
+    height: 200px;
+  }
+
+}
